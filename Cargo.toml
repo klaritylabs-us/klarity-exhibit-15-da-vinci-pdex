@@ -1,0 +1,19 @@
+[package]
+name = "klarity-exhibit-15-da-vinci-pdex"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Da Vinci PDex shape checks"
+publish = false
+
+[lib]
+name = "da_vinci_pdex"
+path = "src/lib.rs"
+
+[[bin]]
+name = "validate-pdex"
+path = "src/bin/validate_pdex.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
